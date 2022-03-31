@@ -1,0 +1,11 @@
+---
+- name: uninstall something
+  apt:
+    name: nginx
+    state: absent
+  notify: alert
+
+handlers:
+  - name: alert
+    debug:
+      msg: "lorem ipsum"

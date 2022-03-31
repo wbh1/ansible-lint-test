@@ -1,0 +1,4 @@
+---
+- name: cleanup package
+  ansible.builtin.include_tasks:
+    file: "uninstall.yml"
